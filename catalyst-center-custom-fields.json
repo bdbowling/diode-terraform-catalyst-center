@@ -1,0 +1,114 @@
+{
+  "stream": "latest",
+  "entities": [
+    {
+      "timestamp": "2026-02-07T14:00:22.461907Z",
+      "custom_field": {
+        "type": "text",
+        "name": "catalyst_id",
+        "label": "Catalyst Site ID",
+        "description": "Unique Cisco Catalyst Center site identifier linking NetBox site to Catalyst site",
+        "required": false,
+        "ui_editable": "no",
+        "object_types": [
+          "dcim.site"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-02-07T14:00:22.462070Z",
+      "custom_field": {
+        "type": "text",
+        "name": "catalyst_location_id",
+        "label": "Catalyst Location ID",
+        "description": "Unique Cisco Catalyst Center location identifier for floor-type sites",
+        "required": false,
+        "ui_editable": "no",
+        "object_types": [
+          "dcim.location"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-02-07T14:00:22.462123Z",
+      "custom_field": {
+        "type": "text",
+        "name": "catalyst_device_id",
+        "label": "Catalyst Device ID",
+        "description": "Unique Cisco Catalyst Center device identifier for non-stack devices",
+        "required": false,
+        "ui_editable": "no",
+        "object_types": [
+          "dcim.device"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-02-07T14:00:22.462208Z",
+      "custom_field": {
+        "type": "text",
+        "name": "catalyst_serial_number",
+        "label": "Catalyst Serial Number",
+        "description": "Serial number from Cisco Catalyst Center for device or stack member",
+        "required": false,
+        "ui_editable": "no",
+        "object_types": [
+          "dcim.device"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-02-07T14:00:22.462286Z",
+      "custom_field": {
+        "type": "text",
+        "name": "catalyst_stack_id",
+        "label": "Catalyst Stack ID",
+        "description": "Cisco Catalyst Center stack identifier for devices that are part of a switch stack",
+        "required": false,
+        "ui_editable": "no",
+        "object_types": [
+          "dcim.device"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-02-07T14:00:22.462322Z",
+      "custom_field": {
+        "type": "text",
+        "name": "catalyst_stack_role",
+        "label": "Catalyst Stack Role",
+        "description": "Role of device in switch stack (ACTIVE, STANDBY, MEMBER)",
+        "required": false,
+        "ui_editable": "no",
+        "object_types": [
+          "dcim.device"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-02-07T14:00:22.462363Z",
+      "manufacturer": {
+        "name": "Cisco",
+        "tags": [
+          {
+            "name": "catalyst-center"
+          },
+          {
+            "name": "cisco"
+          },
+          {
+            "name": "discovered"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "0ae25ead-9d9e-406c-8d9e-3b82368e4e77",
+  "producer_app_name": "cisco_catalyst_center_1/nbl-cisco-catalyst-center",
+  "sdk_name": "diode-sdk-python-dry-run",
+  "sdk_version": "1.9.0",
+  "metadata": {
+    "worker_backend": "nbl-cisco-catalyst-center",
+    "policy_name": "cisco_catalyst_center_worker"
+  }
+}
